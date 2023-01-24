@@ -935,8 +935,6 @@ The interval at which Fleet will ask osquery agents to update their results for 
 
 Setting this to a higher value can reduce baseline load on the Fleet server in larger deployments.
 
-> Setting this to a lower value can increase baseline load significantly and performance issues or even outages. Proceed with caution.
-
 Valid time units are `s`, `m`, `h`.
 
 - Default value: `1h`
@@ -944,7 +942,7 @@ Valid time units are `s`, `m`, `h`.
 - Config file format:
   ```
   osquery:
-  	label_update_interval: 90m
+  	label_update_interval: 30m
   ```
 
 ##### osquery_policy_update_interval
@@ -953,8 +951,6 @@ The interval at which Fleet will ask osquery agents to update their results for 
 
 Setting this to a higher value can reduce baseline load on the Fleet server in larger deployments.
 
-> Setting this to a lower value can increase baseline load significantly and performance issues or even outages. Proceed with caution.
-
 Valid time units are `s`, `m`, `h`.
 
 - Default value: `1h`
@@ -962,7 +958,7 @@ Valid time units are `s`, `m`, `h`.
 - Config file format:
   ```
   osquery:
-  	policy_update_interval: 90m
+  	policy_update_interval: 30m
   ```
 
 ##### osquery_detail_update_interval
@@ -971,8 +967,6 @@ The interval at which Fleet will ask osquery agents to update host details (such
 
 Setting this to a higher value can reduce baseline load on the Fleet server in larger deployments.
 
-> Setting this to a lower value can increase baseline load significantly and performance issues or even outages. Proceed with caution.
-
 Valid time units are `s`, `m`, `h`.
 
 - Default value: `1h`
@@ -980,7 +974,7 @@ Valid time units are `s`, `m`, `h`.
 - Config file format:
   ```
   osquery:
-  	detail_update_interval: 90m
+  	detail_update_interval: 30m
   ```
 
 ##### osquery_status_log_plugin
