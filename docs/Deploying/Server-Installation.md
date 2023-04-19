@@ -158,8 +158,8 @@ Before we can run the server, we need to generate some TLS keying material. If y
 
 ```
 openssl req -x509 -newkey rsa:4096 -sha256 -days 3650 -nodes \
-  -keyout /tmp/server.key -out /tmp/server.cert -subj "/CN=SERVER_NAME” \
-  -addext "subjectAltName=DNS:SERVER_NAME”
+  -keyout /tmp/server.key -out /tmp/server.cert -subj "/CN=SERVER_NAME" \
+  -addext "subjectAltName=DNS:SERVER_NAME"
 ```
 
 You should now have two new files in `/tmp`:
